@@ -1,8 +1,7 @@
 app:
     name: prometheus
     code: prometheus
-    notify: appzdev@cloudbourne.co
-
+    notify: jjpaul@ecloudcontrol.com
 build:
     version: 2.17
     env: DEV
@@ -11,7 +10,7 @@ build:
     image_template: prometheus-2.17
 
 deploy:
-    context: alpha/DEV
+    context: jojin77/DEV
     type: statefulset
     replicas: 1
     port:
